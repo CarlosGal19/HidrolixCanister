@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Hidrolix</title>
+    <title>Hydrolix</title>
     <base href="/" />
     <link rel="icon" href="favicon.ico" />
     <link type="text/css" rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </head>
   <body>
     <main>
@@ -14,11 +16,40 @@
       <br />
       <br />
       <form action="#">
-        <label for="name">Enter your name: &nbsp;</label>
+        <label for="name">Enter your internet identity: &nbsp;</label>
         <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
+        <button type="submit">Show my data!</button>
       </form>
       <section id="greeting"></section>
     </main>
+    <div class="row">
+      <div class="col-4">
+          <div class="card">
+              <img src="agua.jpeg" class="card-img-top" alt="Fissure in Sandstone" />
+              <div class="card-body">
+                  <h5 class="card-title">Dato curioso</h5>
+                  <p class="card-text">El agua que has bebido en los últimos 30 dias tiene un pH promedio de: 7.9</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card">
+              <img src="conyy.png" class="card-img-top" alt="Fissure in Sandstone" />
+              <div class="card-body">
+                  <h5 class="card-title">Dato curioso</h5>
+                  <p class="card-text">La calidad de la última agua sedimentada antes de ser alcalinizada era: Regular</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-4">
+          <div class="card">
+              <img src="agua3.jpeg" class="card-img-top" alt="Fissure in Sandstone" />
+              <div class="card-body">
+                  <h5 class="card-title">Dato curioso</h5>
+                  <p class="card-text">Desde que adquirió el producto, usted ha filtrado: 87.2 L, .</p>
+              </div>
+          </div>
+      </div>
+  </div>
   </body>
 </html>
