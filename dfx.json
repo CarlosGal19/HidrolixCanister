@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "Hidrolix_backend": {
+      "main": "src/Hidrolix_backend/main.mo",
+      "type": "motoko"
+    },
+    "Hidrolix_frontend": {
+      "dependencies": [
+        "Hidrolix_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/Hidrolix_frontend/src/index.html"
+      },
+      "source": [
+        "src/Hidrolix_frontend/assets",
+        "dist/Hidrolix_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
